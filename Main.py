@@ -25,6 +25,6 @@ def processFrames(file_path):
         except EOFError:
             # End of frames
             print("No other frame detected, restarting")
-            process_gif_frames(gif_path)
+            processFrames(gif_path)
 
-process_gif_frames(gif_path)
+processFrames(gif_path)
